@@ -1,0 +1,81 @@
+product_id,product_detail,product_type,product_category,cup_size
+1,Brazilian - Organic,Organic Beans,Coffee beans,n/a
+2,Our Old Time Diner Blend,House blend Beans,Coffee beans,n/a
+3,Espresso Roast,Espresso Beans,Coffee beans,n/a
+4,Primo Espresso Roast,Espresso Beans,Coffee beans,n/a
+5,Columbian Medium Roast,Gourmet Beans,Coffee beans,n/a
+6,Ethiopia,Gourmet Beans,Coffee beans,n/a
+7,Jamacian Coffee River,Premium Beans,Coffee beans,n/a
+8,Civet Cat,Premium Beans,Coffee beans,n/a
+9,Organic Decaf Blend,Organic Beans,Coffee beans,n/a
+10,Guatemalan Sustainably Grown,Green beans,Coffee beans,n/a
+11,Lemon Grass,Herbal tea,Loose Tea,n/a
+12,Peppermint,Herbal tea,Loose Tea,n/a
+13,English Breakfast,Black tea,Loose Tea,n/a
+14,Earl Grey,Black tea,Loose Tea,n/a
+15,Serenity Green Tea,Green tea,Loose Tea,n/a
+16,Traditional Blend Chai,Chai tea,Loose Tea,n/a
+17,Morning Sunrise Chai,Chai tea,Loose Tea,n/a
+18,Spicy Eye Opener Chai,Chai tea,Loose Tea,n/a
+19,Dark chocolate,Drinking Chocolate,Packaged Chocolate,n/a
+20,Sustainably Grown Organic,Organic Chocolate,Packaged Chocolate,n/a
+21,Chili Mayan,Drinking Chocolate,Packaged Chocolate,n/a
+22,Our Old Time Diner Blend Sm,Drip coffee,Coffee,Small
+23,Our Old Time Diner Blend Rg,Drip coffee,Coffee,Regular
+24,Our Old Time Diner Blend Lg,Drip coffee,Coffee,Large
+25,Brazilian Sm,Organic brewed coffee,Coffee,Small
+26,Brazilian Rg,Organic brewed coffee,Coffee,Regular
+27,Brazilian Lg,Organic brewed coffee,Coffee,Large
+28,Columbian Medium Roast Sm,Gourmet brewed coffee,Coffee,Small
+29,Columbian Medium Roast Rg,Gourmet brewed coffee,Coffee,Regular
+30,Columbian Medium Roast Lg,Gourmet brewed coffee,Coffee,Large
+31,Ethiopia Sm,Gourmet brewed coffee,Coffee,Small
+32,Ethiopia Rg,Gourmet brewed coffee,Coffee,Regular
+33,Ethiopia Lg,Gourmet brewed coffee,Coffee,Large
+34,Jamaican Coffee River Sm,Premium brewed coffee,Coffee,Small
+35,Jamaican Coffee River Rg,Premium brewed coffee,Coffee,Regular
+36,Jamaican Coffee River Lg,Premium brewed coffee,Coffee,Large
+37,Espresso shot,Barista Espresso,Coffee,n/a
+38,Latte,Barista Espresso,Coffee,n/a
+39,Latte Rg,Barista Espresso,Coffee,Regular
+40,Cappuccino,Barista Espresso,Coffee,n/a
+41,Cappuccino Lg,Barista Espresso,Coffee,Large
+42,Lemon Grass Rg,Brewed herbal tea,Tea,Regular
+43,Lemon Grass Lg,Brewed herbal tea,Tea,Large
+44,Peppermint Rg,Brewed herbal tea,Tea,Regular
+45,Peppermint Lg,Brewed herbal tea,Tea,Large
+46,Serenity Green Tea Rg,Brewed Green tea,Tea,Regular
+47,Serenity Green Tea Lg,Brewed Green tea,Tea,Large
+48,English Breakfast Rg,Brewed Black tea,Tea,Regular
+49,English Breakfast Lg,Brewed Black tea,Tea,Large
+50,Earl Grey Rg,Brewed Black tea,Tea,Regular
+51,Earl Grey Lg,Brewed Black tea,Tea,Large
+52,Traditional Blend Chai Rg,Brewed Chai tea,Tea,Regular
+53,Traditional Blend Chai Lg,Brewed Chai tea,Tea,Large
+54,Morning Sunrise Chai Rg,Brewed Chai tea,Tea,Regular
+55,Morning Sunrise Chai Lg,Brewed Chai tea,Tea,Large
+56,Spicy Eye Opener Chai Rg,Brewed Chai tea,Tea,Regular
+57,Spicy Eye Opener Chai Lg,Brewed Chai tea,Tea,Large
+58,Dark chocolate Rg,Hot chocolate,Drinking Chocolate,Regular
+59,Dark chocolate Lg,Hot chocolate,Drinking Chocolate,Large
+60,Sustainably Grown Organic Rg,Hot chocolate,Drinking Chocolate,Regular
+61,Sustainably Grown Organic Lg,Hot chocolate,Drinking Chocolate,Large
+63,Carmel syrup,Regular syrup,Flavours,n/a
+64,Hazelnut syrup,Regular syrup,Flavours,n/a
+65,Sugar Free Vanilla syrup,Sugar free syrup,Flavours,n/a
+69,Hazelnut Biscotti,Biscotti,Bakery,n/a
+70,Cranberry Scone,Scone,Bakery,n/a
+71,Chocolate Croissant,Pastry,Bakery,n/a
+72,Ginger Scone,Scone,Bakery,n/a
+73,Almond Croissant,Pastry,Bakery,n/a
+74,Ginger Biscotti,Biscotti,Bakery,n/a
+75,Croissant,Pastry,Bakery,n/a
+76,Chocolate Chip Biscotti,Biscotti,Bakery,n/a
+77,Oatmeal Scone,Scone,Bakery,n/a
+78,Scottish Cream Scone,Scone,Bakery,n/a
+79,Jumbo Savory Scone,Scone,Bakery,n/a
+81,I Need My Bean! T-shirt,Clothing,Branded,n/a
+82,I Need My Bean! Diner mug,Housewares,Branded,n/a
+83,I Need My Bean! Latte cup,Housewares,Branded,n/a
+84,Chocolate syrup,Regular syrup,Flavours,n/a
+87,Ouro Brasileiro shot,Barista Espresso,Coffee,n/a
