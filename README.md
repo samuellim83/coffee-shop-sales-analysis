@@ -90,12 +90,21 @@ Grain: one row per transaction line. `dim_date` is generated with a recursive CT
 - Power Query: typed imports of the star-schema tables
 - Model: three 1-to-many relationships, marked date table, sort-by-column for months and weekdays
 - DAX: `Total Sales`, `Transactions`, `Avg Ticket`, `Sales Prev Month`, `MoM Growth %`, `Running Total Sales`, `Sales YTD`, `Sales per Trading Day`, `% of Total Sales`
-- Pages: Overview · Products · Time heatmap (weekday × hour)
+- Pages: Overview · Products · Time (weekday × hour heatmap)
+- Every measure reconciled against the SQL results (total $698,812.33; monthly totals, MoM % and running total match)
 
-<!-- After building the report, add screenshots:
+### Report pages
+**Overview:** KPI cards, monthly sales with running total, sales by store, synced Store/Month slicers
 ![Overview](images/powerbi_overview.png)
+
+**Products:** top 10 products (Top N filter), sales by category, category → type → product matrix
+![Products](images/powerbi_products.png)
+
+**Time:** weekday × hour heatmap, sales by hour, average daily sales by weekday
+![Time](images/powerbi_time.png)
+
+**Data model**
 ![Model](images/powerbi_model.png)
--->
 
 ## How to reproduce
 1. Install MySQL 8 + MySQL Workbench.
@@ -103,7 +112,7 @@ Grain: one row per transaction line. `dim_date` is generated with a recursive CT
 3. Open `powerbi/Coffee_Shop_Sales.pbix`, or rebuild it with [`powerbi/POWER_BI_GUIDE.md`](powerbi/POWER_BI_GUIDE.md).
 
 ## Dataset
-Coffee Shop Sales sample dataset (fictional coffee chain, 3 New York outlets). Source: <!-- TODO: paste the link you downloaded it from -->
+Coffee Shop Sales sample dataset (fictional coffee chain, 3 New York outlets). Source: Coffee Shop Sales sample dataset (fictional coffee chain, 3 New York outlets). Source: [Kaggle – Coffee Shop Sales (ahmed abbas)](https://www.kaggle.com/code/ahmedabbas757/coffee-shop-sales)
 
 ## Repository structure
 ```

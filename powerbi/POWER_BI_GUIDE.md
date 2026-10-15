@@ -18,7 +18,7 @@ You have two options. **Option A is easier** and gives the same model.
 **fact_sales**
 ```m
 let
-    Source   = Csv.Document(File.Contents("C:\coffee\powerbi\data\fact_sales.csv"),
+    Source   = Csv.Document(File.Contents("C:\Users\ASUS\Desktop\Job\coffee-shop-sales-analysis\coffee\powerbi\data\fact_sales.csv"),
                  [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
     Headers  = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
     Typed    = Table.TransformColumnTypes(Headers, {
@@ -38,7 +38,7 @@ in
 **dim_date**
 ```m
 let
-    Source   = Csv.Document(File.Contents("C:\coffee\powerbi\data\dim_date.csv"),
+    Source   = Csv.Document(File.Contents("C:\Users\ASUS\Desktop\Job\coffee-shop-sales-analysis\coffee\powerbi\data\dim_date.csv"),
                  [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
     Headers  = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
     Typed    = Table.TransformColumnTypes(Headers, {
@@ -113,21 +113,24 @@ CALCULATE ( [Total Sales], DATEADD ( dim_date[full_date], -1, MONTH ) )
 ```
 ```dax
 MoM Growth % =
-DIVIDE ( [Total Sales] - [Sales Prev Month], [Sales Prev Month] )
+IF (
+    HASONEVALUE ( dim_date[month_num] ),
+    DIVIDE ( [Total Sales] - [Sales Prev Month], [Sales Prev Month] )
+)
 ```
-*Format as Percentage (Measure tools → %). January shows blank because there is no December.*
+*Format as Percentage (Measure tools → %). January shows blank because there is no December. `HASONEVALUE` blanks the Total row, where "previous month" would compare Jan–Jun against Dec–May.*
 
 ```dax
 Running Total Sales =
 CALCULATE (
     [Total Sales],
     FILTER (
-        ALL ( dim_date[full_date] ),
+        ALL ( dim_date ),
         dim_date[full_date] <= MAX ( dim_date[full_date] )
     )
 )
 ```
-*Cumulative from the first day. `ALL` removes the current date filter, then `FILTER` keeps every date up to the one being shown.*
+*Cumulative from the first day. `ALL ( dim_date )` removes every date filter (month, weekday…), then `FILTER` keeps every date up to the last one in view.*
 
 ```dax
 Sales YTD = TOTALYTD ( [Total Sales], dim_date[full_date] )
@@ -142,8 +145,9 @@ DIVIDE ( [Total Sales], DISTINCTCOUNT ( fact_sales[date_key] ) )
 
 ```dax
 % of Total Sales =
-DIVIDE ( [Total Sales], CALCULATE ( [Total Sales], ALL ( fact_sales ) ) )
+DIVIDE ( [Total Sales], CALCULATE ( [Total Sales], ALL ( dim_product ) ) )
 ```
+*Share of all products. `ALL ( dim_product )` clears only the product filter, so the store and month slicers still apply.*
 
 Format the money measures as Currency, 2 decimals.
 

@@ -62,7 +62,7 @@ CREATE TABLE dim_date (
     day_of_month  TINYINT     NOT NULL,
     weekday_num   TINYINT     NOT NULL,         -- 1 = Monday ... 7 = Sunday
     weekday_name  VARCHAR(10) NOT NULL,
-    is_weekend    TINYINT(1)  NOT NULL
+    is_weekend    TINYINT     NOT NULL
 );
 
 INSERT INTO dim_date
